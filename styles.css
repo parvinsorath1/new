@@ -1,0 +1,166 @@
+.bot-pic {
+    width: 30px;   /* Set the size of the bot's image */
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 2px; 
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #222; /* Subtle border */
+}
+
+.profile-info {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.profile-info h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.profile-info .username {
+    color: #aaa;
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+.profile-info .status {
+    color: #555;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Messages Section */
+.messages {
+    flex-grow: 1; /* Take remaining space */
+    width: 100%;
+    padding: 10px;
+    overflow-y: auto; /* Enable scrolling */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Message Styles */
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+/* User Message */
+.user-message {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px; /* Increased border-radius */
+}
+
+/* Response Message */
+.response-message-container {
+    display: flex;
+    align-items: center; /* Align image and text */
+    margin-top: 10px;
+}
+
+.response-message {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+    word-wrap: break-word;
+    margin-left: 2px; /* Add some gap between image and text */
+}
+
+/* Profile Picture for Bot Messages */
+.bot-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px; /* Space between image and text */
+}
+
+
+
+
+/* Input Area */
+.input-area {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    border-top: 1px solid #222;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#chatInput {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+#sendBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#sendBtn:hover {
+    background-color: #0056b3;
+}      
